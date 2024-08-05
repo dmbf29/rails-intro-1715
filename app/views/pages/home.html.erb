@@ -1,0 +1,14 @@
+<div class="banner">
+  <h1>Home</h1>
+</div>
+<div class="container">
+  <% @members %>
+  <!-- er + tab -->
+  <!-- pe + tab -->
+  <!-- <a href="/about">About</a> -->
+  <!-- lt + tab -->
+  <!-- 2args -> what you see, where its going -->
+  <%#= link_to 'whatever we see', prefix_path  %>
+  <%= link_to 'About', about_path, class: 'btn btn-primary'  %>
+  <%= link_to 'Contact', contact_path, class: 'btn btn-primary'  %>
+</div>

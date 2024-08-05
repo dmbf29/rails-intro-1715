@@ -1,0 +1,17 @@
+# HTTP CODES
+
+200 => OK
+201 => Created
+
+# Redirect
+301 => Permanent Redirect
+302 => Temp Redirect
+
+# User messed up
+401 => Not authorized -> not allowed
+403 => Not authenticated -> not logged in
+404 => Not found
+422 => Unprocessable Entity -> creation fail
+
+# We messed up
+500 => Sever error

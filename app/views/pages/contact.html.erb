@@ -1,0 +1,20 @@
+<div class="container">
+  <h1>Team for Today</h1>
+  <form action="/contact" method="get">
+    <input type="text" name="member" value="<%= params[:member] %>">
+    <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+    <input type="submit" class="btn btn-primary">
+  </form>
+  <ul>
+    <% if @members.any? %>
+      <% @members.each do |member| %>
+        <li><%= member %></li>
+      <% end %>
+    <% else %>
+      <li>No member matches <code><%= params[:member] %></code></li>
+    <% end %>
+  </ul>
+  <%= link_to root_path, class: 'btn btn-primary' do  %>
+    <i class="fa-solid fa-house"></i>
+  <% end %>
+</div>
